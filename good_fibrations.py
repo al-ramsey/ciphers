@@ -124,7 +124,7 @@ def crypt(text, z_eight):
 
     Returns
     -------
-    None. (plots graph)
+    None. (plots graph). 
     '''
     colours = ["aquamarine", "mediumturquoise", "green", "olivedrab", "teal", "blue", "midnightblue", "indigo", "purple", "mediumorchid", "magenta", "violet", "deeppink", "crimson", "red", "salmon", "peru", "orange", "bisque", "khaki", "yellow", "greenyellow", "lime"]
     alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
@@ -183,19 +183,7 @@ def crypt(text, z_eight):
     ax.set_rlabel_position(-22.5)  #move radial labels away from plotted line
     ax.grid(True)
 
-    ax.set_title("Hopf, my beloved <3", va='bottom')
+    ax.set_title("The Hopf fibration is a good fibration :)", va='bottom')
     plt.show()
     
-#crypt(text, False)
-'''
-def sentences(text, z_eight):
-
-    words = text.split(" ")
-    
-    for word in words:
-        crypt(word, z_eight)
-        
-        input("press enter")
-        
-sentences(text, False)
-'''
+crypt(text, False)
